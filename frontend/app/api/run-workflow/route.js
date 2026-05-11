@@ -419,8 +419,11 @@ export async function POST(request) {
           return;
         }
 
-        const minCost = plan.optimizedCost ||
-          plan.steps.reduce((s, x) => s + (AGENTS[x.agentId]?.priceUsdc || x.estimatedCostUsdc), 0);
+        const minCost = Math.max(
+          plan.optimizedCost || 0,
+          plan.steps.reduce((s, x) => s + (AGENTS[x.agentId]?.priceUsdc || x.estimatedCostUsdc), 0),
+          1.65  // hard floor — 4 agents minimum
+        );
 
         // ── WOW #1 — Budget gate ─────────────────────────────────────────────
         if (minCost > budgetUsdc) {
