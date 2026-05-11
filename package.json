@@ -1,0 +1,23 @@
+{
+  "name": "kiteflow",
+  "version": "1.0.0",
+  "description": "Stripe for AI Agents",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start",
+    "compile": "npx hardhat compile --config hardhat.config.cjs",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --config hardhat.config.cjs --network kite_testnet",
+    "setup": "npm install && cd frontend && npm install"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "dotenv": "^16.6.1",
+    "hardhat": "^2.22.17"
+  },
+  "dependencies": {
+    "ethers": "^6.11.0"
+  },
+  "license": "MIT"
+}
