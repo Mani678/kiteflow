@@ -2,7 +2,7 @@
 
 > Every agent call is a verifiable payment. Every workflow is a provable receipt. On Kite chain.
 
-**[Live Demo](https://kiteflow.vercel.app)** · **[Contract on Kite Scan](https://testnet.kitescan.ai/address/0xFCEe9ff0f73d99416Bf3542d220b0c5FA593741C)**
+**[Live Demo](https://kiteflow-three.vercel.app/)** · **[Contract on Kite Scan](https://testnet.kitescan.ai/address/0xFCEe9ff0f73d99416Bf3542d220b0c5FA593741C)**
 
 ---
 
