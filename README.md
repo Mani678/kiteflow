@@ -199,7 +199,7 @@ node scripts/deploy-direct.js
 ## Built With
 
 - [Kite Chain](https://gokite.ai) — payment rail, attestations, x402 protocol
-- [Claude claude-haiku-4-5-20251001](https://anthropic.com) — orchestrator + all 4 specialist agents
+— orchestrator + all 4 specialist agents
 - [Next.js 14](https://nextjs.org) — frontend, deployed on Vercel
 - [Ethers.js v6](https://docs.ethers.org) — Kite chain interaction
 - [x402 Protocol](https://x402.org) — agent-to-agent payment standard
